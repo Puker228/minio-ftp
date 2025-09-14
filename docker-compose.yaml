@@ -14,11 +14,11 @@ services:
       MINIO_ROOT_USER: ${MINIO_ROOT_USER}
       MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
     ports:
-      - "9000:9000" # S3 API
-      - "9001:9001" # Web-консоль
-      - "8021:8021" # FTP (command/ctrl)
-      - "8022:8022" # SFTP (SSH)
-      - "30000-30010:30000-30010" # FTP passive data ports
+      - "9000:9000"
+      - "9001:9001"
+      - "8021:8021"
+      - "8022:8022"
+      - "30000-30010:30000-30010"
     networks:
       - app_network
     volumes:
